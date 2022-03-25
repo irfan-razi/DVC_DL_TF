@@ -15,3 +15,140 @@ INFO:root:YAML file: config/config.yaml loaded.
 INFO:root:directory is created at data/dog
 INFO:root:directory is created at data/cat
 INFO:root:All the data saved in local. >>>>>>>
+INFO:root:>>>>>>>> Stage 2 started.
+INFO:root:YAML file: config/config.yaml loaded.
+INFO:root:YAML file: params.yaml loaded.
+INFO:root:directory is created at artifacts\base_model
+WARNING:tensorflow:Compiled the loaded model, but the compiled metrics have yet to be built. `model.compile_metrics` will be empty until you train or evaluate the model.
+INFO:root:Model VGG16 has been saved to artifacts\base_model\VGG16_base_model.h5
+ERROR:root:module 'keras.api._v2.keras.optimizers' has no attribute 'sgd'
+Traceback (most recent call last):
+  File "G:\INEURON\FAST-TRACK\AIOPS\04. DVC\04. DVC Basics DL-TF Usecase\DVC_DL_TF\src\stage_02_prepare_base_model.py", line 65, in <module>
+    prepare_base_model(config_path=parsed_args.config, params_path=parsed_args.params)
+  File "G:\INEURON\FAST-TRACK\AIOPS\04. DVC\04. DVC Basics DL-TF Usecase\DVC_DL_TF\src\stage_02_prepare_base_model.py", line 44, in prepare_base_model
+    full_model = prepare_model(
+  File "g:\ineuron\fast-track\aiops\04. dvc\04. dvc basics dl-tf usecase\dvc_dl_tf\src\utils\models.py", line 34, in prepare_model
+    optimizer=tf.keras.optimizers.sgd(learning_rate=learning_rate),
+AttributeError: module 'keras.api._v2.keras.optimizers' has no attribute 'sgd'
+INFO:root:>>>>>>>> Stage 2 started.
+INFO:root:YAML file: config/config.yaml loaded.
+INFO:root:YAML file: params.yaml loaded.
+INFO:root:directory is created at artifacts\base_model
+WARNING:tensorflow:Compiled the loaded model, but the compiled metrics have yet to be built. `model.compile_metrics` will be empty until you train or evaluate the model.
+INFO:root:Model VGG16 has been saved to artifacts\base_model\VGG16_base_model.h5
+ERROR:root:Missing required positional argument
+Traceback (most recent call last):
+  File "G:\INEURON\FAST-TRACK\AIOPS\04. DVC\04. DVC Basics DL-TF Usecase\DVC_DL_TF\src\stage_02_prepare_base_model.py", line 65, in <module>
+    prepare_base_model(config_path=parsed_args.config, params_path=parsed_args.params)
+  File "G:\INEURON\FAST-TRACK\AIOPS\04. DVC\04. DVC Basics DL-TF Usecase\DVC_DL_TF\src\stage_02_prepare_base_model.py", line 44, in prepare_base_model
+    full_model = prepare_model(
+  File "g:\ineuron\fast-track\aiops\04. dvc\04. dvc basics dl-tf usecase\dvc_dl_tf\src\utils\models.py", line 35, in prepare_model
+    loss=tf.keras.losses.categorical_crossentropy(),
+  File "C:\Users\IRU\AppData\Local\Programs\Python\Python39\lib\site-packages\tensorflow\python\util\traceback_utils.py", line 153, in error_handler
+    raise e.with_traceback(filtered_tb) from None
+  File "C:\Users\IRU\AppData\Local\Programs\Python\Python39\lib\site-packages\tensorflow\python\util\dispatch.py", line 1076, in op_dispatch_handler
+    result = api_dispatcher.Dispatch(args, kwargs)
+TypeError: Missing required positional argument
+INFO:root:>>>>>>>> Stage 2 started.
+INFO:root:YAML file: config/config.yaml loaded.
+INFO:root:YAML file: params.yaml loaded.
+INFO:root:directory is created at artifacts\base_model
+WARNING:tensorflow:Compiled the loaded model, but the compiled metrics have yet to be built. `model.compile_metrics` will be empty until you train or evaluate the model.
+INFO:root:Model VGG16 has been saved to artifacts\base_model\VGG16_base_model.h5
+ERROR:root:Missing required positional argument
+Traceback (most recent call last):
+  File "G:\INEURON\FAST-TRACK\AIOPS\04. DVC\04. DVC Basics DL-TF Usecase\DVC_DL_TF\src\stage_02_prepare_base_model.py", line 65, in <module>
+    prepare_base_model(config_path=parsed_args.config, params_path=parsed_args.params)
+  File "G:\INEURON\FAST-TRACK\AIOPS\04. DVC\04. DVC Basics DL-TF Usecase\DVC_DL_TF\src\stage_02_prepare_base_model.py", line 44, in prepare_base_model
+    full_model = prepare_model(
+  File "g:\ineuron\fast-track\aiops\04. dvc\04. dvc basics dl-tf usecase\dvc_dl_tf\src\utils\models.py", line 35, in prepare_model
+    loss=tf.keras.losses.categorical_crossentropy(),
+  File "C:\Users\IRU\AppData\Local\Programs\Python\Python39\lib\site-packages\tensorflow\python\util\traceback_utils.py", line 153, in error_handler
+    raise e.with_traceback(filtered_tb) from None
+  File "C:\Users\IRU\AppData\Local\Programs\Python\Python39\lib\site-packages\tensorflow\python\util\dispatch.py", line 1076, in op_dispatch_handler
+    result = api_dispatcher.Dispatch(args, kwargs)
+TypeError: Missing required positional argument
+INFO:root:>>>>>>>> Stage 2 started.
+INFO:root:YAML file: config/config.yaml loaded.
+INFO:root:YAML file: params.yaml loaded.
+INFO:root:directory is created at artifacts\base_model
+WARNING:tensorflow:Compiled the loaded model, but the compiled metrics have yet to be built. `model.compile_metrics` will be empty until you train or evaluate the model.
+INFO:root:Model VGG16 has been saved to artifacts\base_model\VGG16_base_model.h5
+INFO:root:Custom model is ready and ready to be trained.
+ERROR:root:'UPDATE_BASE_MODEL_NAME'
+Traceback (most recent call last):
+  File "G:\INEURON\FAST-TRACK\AIOPS\04. DVC\04. DVC Basics DL-TF Usecase\DVC_DL_TF\src\stage_02_prepare_base_model.py", line 65, in <module>
+    prepare_base_model(config_path=parsed_args.config, params_path=parsed_args.params)
+  File "G:\INEURON\FAST-TRACK\AIOPS\04. DVC\04. DVC Basics DL-TF Usecase\DVC_DL_TF\src\stage_02_prepare_base_model.py", line 52, in prepare_base_model
+    update_base_model_path = os.path.join(base_model_dir_path, artifacts["UPDATE_BASE_MODEL_NAME"])
+KeyError: 'UPDATE_BASE_MODEL_NAME'
+INFO:root:>>>>>>>> Stage 2 started.
+INFO:root:YAML file: config/config.yaml loaded.
+INFO:root:YAML file: params.yaml loaded.
+INFO:root:directory is created at artifacts\base_model
+WARNING:tensorflow:Compiled the loaded model, but the compiled metrics have yet to be built. `model.compile_metrics` will be empty until you train or evaluate the model.
+INFO:root:Model VGG16 has been saved to artifacts\base_model\VGG16_base_model.h5
+INFO:root:Custom model is ready and ready to be trained.
+INFO:root:None
+INFO:root:stage 2 completed. Base model has been created. >>>>>>>
+INFO:root:>>>>>>>> Stage 2 started.
+INFO:root:YAML file: config/config.yaml loaded.
+INFO:root:YAML file: params.yaml loaded.
+INFO:root:directory is created at artifacts\base_model
+WARNING:tensorflow:Compiled the loaded model, but the compiled metrics have yet to be built. `model.compile_metrics` will be empty until you train or evaluate the model.
+INFO:root:Model VGG16 has been saved to artifacts\base_model\VGG16_base_model.h5
+INFO:root:Custom model is ready and ready to be trained.
+INFO:root:Full model summary: 
+ Model: "model"
+_________________________________________________________________
+ Layer (type)                Output Shape              Param #   
+=================================================================
+ input_1 (InputLayer)        [(None, 224, 224, 3)]     0         
+                                                                 
+ block1_conv1 (Conv2D)       (None, 224, 224, 64)      1792      
+                                                                 
+ block1_conv2 (Conv2D)       (None, 224, 224, 64)      36928     
+                                                                 
+ block1_pool (MaxPooling2D)  (None, 112, 112, 64)      0         
+                                                                 
+ block2_conv1 (Conv2D)       (None, 112, 112, 128)     73856     
+                                                                 
+ block2_conv2 (Conv2D)       (None, 112, 112, 128)     147584    
+                                                                 
+ block2_pool (MaxPooling2D)  (None, 56, 56, 128)       0         
+                                                                 
+ block3_conv1 (Conv2D)       (None, 56, 56, 256)       295168    
+                                                                 
+ block3_conv2 (Conv2D)       (None, 56, 56, 256)       590080    
+                                                                 
+ block3_conv3 (Conv2D)       (None, 56, 56, 256)       590080    
+                                                                 
+ block3_pool (MaxPooling2D)  (None, 28, 28, 256)       0         
+                                                                 
+ block4_conv1 (Conv2D)       (None, 28, 28, 512)       1180160   
+                                                                 
+ block4_conv2 (Conv2D)       (None, 28, 28, 512)       2359808   
+                                                                 
+ block4_conv3 (Conv2D)       (None, 28, 28, 512)       2359808   
+                                                                 
+ block4_pool (MaxPooling2D)  (None, 14, 14, 512)       0         
+                                                                 
+ block5_conv1 (Conv2D)       (None, 14, 14, 512)       2359808   
+                                                                 
+ block5_conv2 (Conv2D)       (None, 14, 14, 512)       2359808   
+                                                                 
+ block5_conv3 (Conv2D)       (None, 14, 14, 512)       2359808   
+                                                                 
+ block5_pool (MaxPooling2D)  (None, 7, 7, 512)         0         
+                                                                 
+ flatten (Flatten)           (None, 25088)             0         
+                                                                 
+ dense (Dense)               (None, 2)                 50178     
+                                                                 
+=================================================================
+Total params: 14,764,866
+Trainable params: 50,178
+Non-trainable params: 14,714,688
+_________________________________________________________________
+
+INFO:root:stage 2 completed. Base model has been created. >>>>>>>
