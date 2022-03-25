@@ -3,6 +3,10 @@ import os
 import json
 import logging
 
+logging_str = "[%(asctime)s: %(levelname)s: %(module)s]: %(message)s"
+log_dir = "logs"
+logging.basicConfig(filename=os.path.join(log_dir, "running_logs.log"),
+                    level=logging.INFO, filemode='a')
 
 def read_yaml(path_to_yaml: str) -> dict:
     with open(path_to_yaml) as yaml_file:

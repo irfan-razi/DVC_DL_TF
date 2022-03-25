@@ -1,0 +1,6 @@
+INFO:root:directory is created at logs
+INFO:root:Stage 1 started.
+INFO:root:YAML file: config/config.yaml loaded.
+INFO:root:directory is created at data/dog
+INFO:root:directory is created at data/cat
+INFO:root:All the data saved in local.
