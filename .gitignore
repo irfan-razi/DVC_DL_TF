@@ -1,3 +1,4 @@
 ./env
 config/secrets.yaml
 env/
+data/

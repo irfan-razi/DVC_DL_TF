@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: src
+Version: 0.0.1
+Summary: A small package for dvc dl_tf pipeline demo
+Home-page: https://github.com/irfan-razi/DVC_DL_TF
+Author: irfan-razi
+Author-email: 15.irfan.razi@gmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+
+UNKNOWN
+
