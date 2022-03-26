@@ -186,3 +186,14 @@ INFO:root:directory is created at artifacts\model
 INFO:root:Untrained Model has been loaded from artifacts\base_model\updated_VGG16_base_model.h5
 INFO:root:Saved Callbacks are loaded from artifacts\callbacks
 INFO:root:stage 4 completed. Model training completed. >>>>>>>
+INFO:root:>>>>>>>> Stage 4 started.
+INFO:root:YAML file: config/config.yaml loaded.
+INFO:root:YAML file: params.yaml loaded.
+INFO:root:directory is created at artifacts\model
+INFO:root:Untrained Model has been loaded from artifacts\base_model\updated_VGG16_base_model.h5
+INFO:root:Saved Callbacks are loaded from artifacts\callbacks
+INFO:root:Data augmentation is enabled.
+INFO:root:Data generator is ready.
+INFO:root:stage 4 completed. Model training completed. >>>>>>>
+
+
