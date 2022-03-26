@@ -402,3 +402,4 @@ zc.lockfile==2.0
 zict==2.0.0
 zipp==2.0.1
 joblib==0.13.2
+scipy==1.7.3
