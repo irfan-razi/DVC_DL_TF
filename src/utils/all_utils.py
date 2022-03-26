@@ -2,6 +2,7 @@ import yaml
 import os
 import json
 import logging
+import time
 
 logging_str = "[%(asctime)s: %(levelname)s: %(module)s]: %(message)s"
 log_dir = "logs"
@@ -30,3 +31,9 @@ def save_reports(report: dict, report_path: str, indentation=4):
     with open(report_path,"w") as f:
         json.dump(report, f, indent=indentation)
     logging.info(f"Reports are saved at {report_path}.")
+
+
+def get_timestamp(name):
+    timestamp = time.asctime().replace(" ", "_").replace(":", "_")
+    unique_name = f"{name}_at_{timestamp}"
+    return unique_name
