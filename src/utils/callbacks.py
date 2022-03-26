@@ -6,9 +6,6 @@ import joblib
 import logging
 
 
-
-
-
 def create_and_save_tensorboard_callbacks(callbacks_dir, tensorboard_log_dir):
     unique_name = get_timestamp("tb_logs")
 
@@ -21,7 +18,13 @@ def create_and_save_tensorboard_callbacks(callbacks_dir, tensorboard_log_dir):
 
 
 
+def create_and_save_checkpoint_callbacks(callbacks_dir, checkpoint_dir):
+    checkpoint_file_path = os.path.join(checkpoint_dir, "ckpt_model.h5")
+    checkpoint_callback = tf.keras.callbacks.ModelCheckpoint(
+        filepath=checkpoint_file_path,
+        save_best_only=True
+    )
 
-
-def create_and_save_checkpoint_callbacks():
-    pass
+    ckpt_callback_filepath = os.path.join(callbacks_dir, "checkpoint_cb.cb")
+    joblib.dump(checkpoint_callback, ckpt_callback_filepath)
+    logging.info("Checkpoint callback is saved as binary at {}".format(ckpt_callback_filepath))

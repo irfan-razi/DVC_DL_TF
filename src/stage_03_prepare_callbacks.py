@@ -1,14 +1,7 @@
-from gc import callbacks
-import os.path
-
-from tensorboard import summary
-import tensorboard
-
+import os
 from src.utils.all_utils import read_yaml, create_directory
 from src.utils.callbacks import create_and_save_tensorboard_callbacks, create_and_save_checkpoint_callbacks
 import argparse
-import pandas as pd
-from tqdm import tqdm
 import logging
 
 logging_str = "[%(asctime)s: %(levelname)s: %(module)s]: %(message)s"
