@@ -43,7 +43,7 @@ if __name__=='__main__':
     try:
         logging.info(">>>>>>>> Stage 4 started.")
         train_model(config_path=parsed_args.config, params_path=parsed_args.params)
-        logging.info("stage 4 completed. Model training completed. >>>>>>>")
+        logging.info("stage 4 completed. Model training completed. >>>>>>>\n\n")
     except Exception as e:
         logging.exception(e)
         raise e
