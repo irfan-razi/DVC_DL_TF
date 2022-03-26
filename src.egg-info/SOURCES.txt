@@ -2,6 +2,8 @@ README.md
 setup.py
 src/__init__.py
 src/stage_01_load_save.py
+src/stage_02_prepare_base_model.py
+src/stage_03_prepare_callbacks.py
 src.egg-info/PKG-INFO
 src.egg-info/SOURCES.txt
 src.egg-info/dependency_links.txt

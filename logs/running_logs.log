@@ -152,3 +152,12 @@ Non-trainable params: 14,714,688
 _________________________________________________________________
 
 INFO:root:stage 2 completed. Base model has been created. >>>>>>>
+INFO:root:>>>>>>>> Stage 3 started.
+INFO:root:YAML file: config/config.yaml loaded.
+INFO:root:YAML file: params.yaml loaded.
+INFO:root:directory is created at artifacts\tensorboard_log_dir
+INFO:root:directory is created at artifacts\checkpoints
+INFO:root:directory is created at artifacts\callbacks
+INFO:root:Tensorboard callback is saved as binary at artifacts\callbacks\tensorboard_cb.cb
+INFO:root:Checkpoint callback is saved as binary at artifacts\callbacks\checkpoint_cb.cb
+INFO:root:stage 3 completed. Callbacks are prepared and saved as binary. >>>>>>>
