@@ -161,3 +161,28 @@ INFO:root:directory is created at artifacts\callbacks
 INFO:root:Tensorboard callback is saved as binary at artifacts\callbacks\tensorboard_cb.cb
 INFO:root:Checkpoint callback is saved as binary at artifacts\callbacks\checkpoint_cb.cb
 INFO:root:stage 3 completed. Callbacks are prepared and saved as binary. >>>>>>>
+INFO:root:>>>>>>>> Stage 4 started.
+INFO:root:YAML file: config/config.yaml loaded.
+INFO:root:YAML file: params.yaml loaded.
+INFO:root:directory is created at artifacts\model
+INFO:root:Untrained Model has been loaded from artifacts\base_model\updated_VGG16_base_model.h5
+ERROR:root:'CALLBACKs_DIR'
+Traceback (most recent call last):
+  File "src/stage_04_train.py", line 45, in <module>
+    train_model(config_path=parsed_args.config, params_path=parsed_args.params)
+  File "src/stage_04_train.py", line 31, in train_model
+    callback_dir_path = os.path.join(artifacts_dir, artifacts["CALLBACKs_DIR"])
+KeyError: 'CALLBACKs_DIR'
+INFO:root:>>>>>>>> Stage 4 started.
+INFO:root:YAML file: config/config.yaml loaded.
+INFO:root:YAML file: params.yaml loaded.
+INFO:root:directory is created at artifacts\model
+INFO:root:Untrained Model has been loaded from artifacts\base_model\updated_VGG16_base_model.h5
+INFO:root:stage 4 completed. Model training completed. >>>>>>>
+INFO:root:>>>>>>>> Stage 4 started.
+INFO:root:YAML file: config/config.yaml loaded.
+INFO:root:YAML file: params.yaml loaded.
+INFO:root:directory is created at artifacts\model
+INFO:root:Untrained Model has been loaded from artifacts\base_model\updated_VGG16_base_model.h5
+INFO:root:Saved Callbacks are loaded from artifacts\callbacks
+INFO:root:stage 4 completed. Model training completed. >>>>>>>
